@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* For Whole Document */
+html{
+    background-color: #ffffff;
+    color: #c1c1c1;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.main{
+    width: 100%;
+    height: 95.6vh;
+    background: url(./images/background.svg) no-repeat;
+    background-size: 2600px 900px;
+}
+
+.container{
+    padding: 3rem 12rem;    
+}
+
+/* Navigation Menu */
+.navbar{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    flex: 3;
+    color: #d35400;
+    margin: 10px 20px 10px 20px;
+}
+
+.logo span{
+    background-color: #d35400;
+    padding: 10px;
+    color: #fff;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    color: #000000;
+    font-size: 17px;
+}
+
+.menu ul li a:hover{
+    color: #d35400;
+}
+
+.menu .btn{
+    background-color: #d35400;
+    border-radius: 2px;
+    position: relative;
+    top: 10px;
+    padding: 10px 20px;
+}
+
+.menu .btn:hover{
+    color: #fff;
+    background-color: #000000;
+}
+
+.toggle-btn{
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.toggle-btn .bar{
+    color: #f7f1e3 !important;
+}
+
+/* Main Content */
+.main-content{
+    display: flex;
+}
+
+.text{
+    flex: 1;
+    padding-top: 11rem;
+    color: #000000;
+}
+
+.description div:nth-child(1){
+    background-color: #d35400;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.description div:nth-child(2){
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.banner{
+    flex: 2;
+    padding-top: 5rem;
+}
+
+.banner img{
+    height: 100%;
+    width: 70%;
+    float: right;
+}
+
+h1{
+    font-size: 3.7rem;
+    color: #000000;
+    font-weight: medium;
+    padding: 5px 10px;
+}
+
+h1:nth-child(1){
+    background-color: #d35400;
+}
+
+h1:nth-child(2){
+    background-color: #000000;
+    color: #fff;
+}
+
+.btn-rounded{
+    padding: 0.7rem;
+    background-color: #d35400;
+    border-radius: 30px;
+}
+
+.btn-rounded:hover{
+    color: #fff;
+    background-color: #000000;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Footer */
+.ftr{
+    background-color: #d35400;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.ftr div{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.social a{
+    font-size: 25px;
+    color: #fff;
+}
+
+.social a i{
+    padding: 0 10px;
+}
+
+.social a i:hover{
+    color: #000000;
+}
+
+.copy{
+    color: #000000;
+    font-size: 18px;
+}
+
+/* Responsive */
+@media(max-width:1790px){
+    /* Whole Document */
+    .main{
+        background-size: 2300px 850px;
+    }
+
+    /* Main Content */
+    h1{
+        font-size: 3rem;
+    }
+
+    .text{
+        padding-top: 7rem;
+    }
+
+    .description div:nth-child(1){
+        font-size: 15px;
+    }
+
+    .description div:nth-child(2){
+        font-size: 15px;
+    }
+}
+
+@media(max-width:1672px){
+    /* Whole Document */
+    .main{
+        background-size: 2100px 800px;
+    }
+
+    /* Main Content */
+    h1{
+        font-size: 2rem;
+    }
+
+    .text{
+        padding-top: 5rem;
+    }
+
+    .description div:nth-child(1){
+        font-size: 14px;
+    }
+
+    .description div:nth-child(2){
+        font-size: 14px;
+    }
+}
+
+@media(max-width:1580px){
+    /* Whole Document */
+    .main{
+        background-size: 2000px 700px;
+    }
+}
+
+@media(max-width:1400px){
+    /* Navigation Menu */
+    .logo{
+        font-size: 17px;
+    }
+
+    .menu ul li a{
+        font-size: 15px;
+    }
+
+    .main{
+        background-size: 1800px 600px;
+    }
+
+    /* Main Content */
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .text{
+        padding-top: 3rem;
+    }
+
+    .description div:nth-child(1){
+        font-size: 12px;
+    }
+
+    .description div:nth-child(2){
+        font-size: 12px;
+    }
+
+    .btn-rounded{
+        font-size: 15px;
+    }
+    
+}
+
+@media(max-width:1266px){
+    /* Whole Document */
+    .main{
+        background-size: 1600px 540px;
+    }
+
+    /* Navigation Menu */
+    .logo{
+        font-size: 15px;
+    }
+
+    .menu ul li a{
+        font-size: 13px;
+    }
+
+    /* Main Content */
+    h1{
+        font-size: 1rem;
+    }
+
+    .description div:nth-child(1){
+        font-size: 11px;
+    }
+
+    .description div:nth-child(2){
+        font-size: 11px;
+    }
+
+    .text{
+        padding-top: 2rem;
+    }
+}
+
+@media(max-width:1166px){
+    /* Whole Document */
+    .container{
+        padding: 2rem 7rem;    
+    }
+    
+    /* Navigation Menu */
+    .toggle-btn{
+        display: flex;
+    }
+
+    .menu{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        z-index: 5;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .menu li{
+        text-align: center;
+    }
+
+    .active{
+        display: flex;
+    }
+
+}
+
+@media(max-width:1040px){
+    /* Whole Document */
+    .container{
+        padding: 1rem 2rem;    
+    }
+
+    .main{
+        background-size: 1000px 700px;
+    }
+
+    /* Main Content */
+    .text{
+        position: relative;
+        z-index: 4;
+    }
+
+    .banner{
+        position: fixed;
+        min-width: 100%;
+
+        z-index: 3;
+    }
+
+    .banner img{
+        width: 90%;
+    }
+
+    /* Footer */
+    .copy{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:548px){
+    /* Whole Document */
+    .main{
+        background-size: 800px 520px;;
+    }
+}
+
+@media(max-width:346px){
+    /* Whole Document */
+    .main{
+        background-size: 800px 450px;;
+    }
+
+    /* Footer */
+    .copy{
+        font-size: 12px;
+    }
+}
