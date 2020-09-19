@@ -10,4 +10,6 @@
 * Illustration Based
 * Responsive
 
+### License : MIT
+
 ### Your welcome to update this source code if it contains any miss matches.
